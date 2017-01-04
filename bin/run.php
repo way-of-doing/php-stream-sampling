@@ -17,7 +17,7 @@ try {
     echo PHP_EOL;
     die(0);
 } catch (IncompleteInputException $e) {
-    printf("usage: use --size|-s <size> to specify sample size, optionally --limit|-l <bytes> to process only part of the input\n");
+    printf("usage: use --sample|-s <size> to specify sample size, optionally --limit|-l <bytes> to process only part of the input\n");
     printf("usage: input is automatically selected between STDIN (if data is piped), or a CSPRNG-generated sequence of A-Z (if not)\n");
 } catch (Exception $e) {
     printf("error: %s\n", $e->getMessage());
